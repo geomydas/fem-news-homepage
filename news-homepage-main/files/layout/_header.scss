@@ -1,0 +1,27 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  &_navigation {
+    margin-left: auto;
+  }
+  &_list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  &_listItem {
+    color: variables.$Dark-grayish-blue;
+  }
+
+  &_toggle-hamburger,
+  &_untoggle-hamburger {
+    display: none;
+  }
+  
+}

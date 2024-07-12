@@ -1,0 +1,9 @@
+@mixin regular {
+  font-weight: 400;
+}
+@mixin bold {
+  font-weight: 700;
+}
+@mixin extra-bold {
+  font-weight: 800;
+}

@@ -1,0 +1,22 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+.header_listItem:hover {
+  color: variables.$Soft-red;
+  transition: 0.1s color;
+}
+ 
+.article_button:hover {
+  color: white;
+  background-color: variables.$Very-dark-blue;
+  transition: 0.5s all;
+}
+
+.aside_subheader:hover {
+  color: variables.$Soft-orange;
+  transition: 0.5s color;
+}
+
+.footer_subheader:hover {
+  color: variables.$Soft-red;
+  transition: 0.5s color;
+}

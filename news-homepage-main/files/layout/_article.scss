@@ -1,0 +1,33 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+.article {
+  display: flex;
+
+  &_text-container {
+    margin-left: auto;
+  }
+
+  &_header {
+    font-size: 3rem;
+    color: variables.$Very-dark-blue;
+    max-width: 9ch;
+    line-height: 1.1;
+    @include mixins.extra-bold;
+  }
+
+  &_paragraph {
+    color: variables.$Dark-grayish-blue;
+    max-width: 350px;
+    margin-bottom: 2rem;
+  }
+
+  &_button {
+    background-color: variables.$Soft-red;
+    border: 0;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    @include mixins.extra-bold;
+  }
+  
+}

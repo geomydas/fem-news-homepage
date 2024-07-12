@@ -1,0 +1,39 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+body {
+  background-color: variables.$Off-white;
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1200px;
+}
+
+.grid-container_article-aside-img {
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.article_img-desktop {
+  grid-column: span 2;
+}
+
+.article_img-mobile {
+  display: none;
+}
+
+.article {
+  grid-row: 2;
+  grid-column: span 2;
+}
+
+.aside {
+  grid-row: span 2;
+}
+

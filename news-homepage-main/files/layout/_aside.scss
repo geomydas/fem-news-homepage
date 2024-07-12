@@ -1,0 +1,27 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+.aside {
+  background-color: variables.$Very-dark-blue;
+  padding: 1rem;
+
+  &_header {
+    color: variables.$Soft-orange;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &_subheader {
+    color: variables.$Off-white;
+    margin-bottom: 0.5rem;
+  }
+
+  &_paragraph {
+    color: variables.$Dark-grayish-blue;
+  }
+
+  &_horizontalbreak {
+    margin: 2rem 0;
+    border: 1px solid #3c3c56;
+  }
+  
+}
